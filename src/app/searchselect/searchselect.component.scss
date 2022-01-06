@@ -1,0 +1,50 @@
+.dropdown {
+    position: relative;
+    display: block;
+}
+.dropdown div.btn{
+    background-color: rgb(202, 199, 199);
+    display: flex;
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+}
+.dropdown div.btn div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.dropdown div.btn i {
+    margin-left: auto;
+}
+.dropdown-content {
+display: none;
+overflow-y: scroll;
+overflow-x: hidden;
+max-height: 500px;
+min-width: max-content;
+position: absolute;
+border: 1px solid black;
+z-index: 1;
+
+}
+.dropdown-content p,.dropdown-content input  {
+    margin: 0px;
+    padding-left: 20px;
+    width: 100%;
+}
+.dropdown-content i  {
+        float: left;
+        margin-right: 6px;
+        margin-top: -20px;
+        position: relative;
+        z-index: 2;
+}
+
+.dropdown:hover  .dropdown-content  {
+display: block;
+}
+.dropdown p:hover {
+ background-color: rgb(83, 83, 235);
+}

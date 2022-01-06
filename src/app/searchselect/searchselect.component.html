@@ -1,0 +1,14 @@
+<div class="dropdown">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="btn">
+        <div> {{this.itemSelected}} </div>
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="dropdown-content">
+        <input #input type="text" placeholder="search for item" (input)="this.filterData(input.value)">
+        <i class="fa fa-search fa-lg"></i>
+        <ng-container *ngFor="let item of showme">
+            <p *ngIf="item.filter" (click)="this.itemSelector(item)">{{item}}</p>
+        </ng-container>
+    </div>
+</div>
